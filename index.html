@@ -1,0 +1,1434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abebe Getachew | Full Stack Developer</title>
+<meta name="description" content="Full stack web developer specializing in PHP, MySQL, and JavaScript. Building scalable web applications and innovative solutions.">
+<meta name="keywords" content="web developer, full stack, PHP, MySQL, JavaScript, portfolio">
+<meta name="author" content="Abebe Getachew">
+<meta property="og:title" content="Abebe Getachew | Full Stack Developer">
+<meta property="og:description" content="Full stack web developer with expertise in PHP, MySQL, and JavaScript.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="image/abc.png">
+
+<link rel="stylesheet" href="clean-style.css">
+
+<!-- Professional Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- Tailwind CSS - Production Optimized -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<script>
+  tailwind.config = {
+    darkMode: 'class',
+    theme: {
+      extend: {
+        colors: {
+          'deep-navy': '#111827',
+          'accent-purple': '#8B5CF6',
+        },
+        fontFamily: {
+          'inter': ['Inter', 'sans-serif'],
+        }
+      }
+    },
+    plugins: []
+  }
+</script>
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<!-- AOS Animation -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="image/favicon.png">
+
+</head>
+
+<body>
+
+<!-- DYNAMIC PARTICLE SYSTEM -->
+<div class="particle-system" id="particleSystem"></div>
+
+<!-- MINIMALIST NAVBAR -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-deep-navy/80 backdrop-blur-lg border-b border-gray-800 navbar-3d">
+    <nav class="max-w-7xl mx-auto px-6 py-6">
+        <div class="flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <img src="image/abc.png" alt="Abebe Getachew" class="w-10 h-10 rounded-full object-cover border-2 border-accent-purple">
+                <div class="text-white font-inter font-semibold text-lg">Abebe Getachew</div>
+            </div>
+            <div class="flex items-center space-x-8">
+                <a href="#work" class="text-gray-300 hover:text-white transition-colors duration-300 font-inter font-medium nav-link-smooth">Work</a>
+                <a href="#stack" class="text-gray-300 hover:text-white transition-colors duration-300 font-inter font-medium nav-link-smooth">Stack</a>
+                <a href="#contact" class="text-gray-300 hover:text-white transition-colors duration-300 font-inter font-medium nav-link-smooth">Contact</a>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!-- VISUAL HERO SECTION -->
+<section id="work" class="min-h-screen bg-deep-navy flex items-center justify-center pt-20">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div class="space-y-6" data-aos="fade-right">
+            <div class="name-container">
+                <div class="name-glow"></div>
+                <h1 class="hero-title-3d text-5xl lg:text-6xl font-inter font-bold leading-tight headtech-icon" id="animatedName">
+                    <!-- Letters will be inserted by JavaScript -->
+                </h1>
+            </div>
+            <p class="text-xl text-gray-300 font-inter text-premium">
+                Full stack developer building scalable web applications with modern technologies.
+            </p>
+            <div class="flex space-x-4">
+                <a href="#work" class="btn-premium nav-link-smooth">
+                    View Work
+                </a>
+                <a href="#contact" class="btn-premium-secondary nav-link-smooth">
+                    Get In Touch
+                </a>
+            </div>
+        </div>
+        
+        <div class="relative" data-aos="fade-left">
+            <!-- Powerful 3D Animated Element -->
+            <div class="perspective-1000">
+                <div class="relative w-full h-96">
+                    <!-- 3D Rotating Cube Animation -->
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <div class="relative w-64 h-64 transform-style-3d animate-3d-cube">
+                            <!-- Front Face -->
+                            <div class="absolute w-64 h-64 bg-gradient-to-br from-accent-purple to-accent-purple-dark rounded-2xl flex items-center justify-center border-2 border-accent-purple/30 shadow-2xl cube-face-front">
+                                <div class="text-center text-white p-8">
+                                    <i class="fas fa-code text-6xl mb-4"></i>
+                                    <h3 class="text-2xl font-bold mb-2">Full Stack</h3>
+                                    <p class="text-sm opacity-80">PHP & JavaScript</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Back Face -->
+                            <div class="absolute w-64 h-64 bg-gradient-to-br from-purple-600 to-indigo-600 rounded-2xl flex items-center justify-center border-2 border-purple-400/30 shadow-2xl cube-face-back">
+                                <div class="text-center text-white p-8">
+                                    <i class="fas fa-database text-6xl mb-4"></i>
+                                    <h3 class="text-2xl font-bold mb-2">Database</h3>
+                                    <p class="text-sm opacity-80">MySQL Expert</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Right Face -->
+                            <div class="absolute w-64 h-64 bg-gradient-to-br from-indigo-600 to-blue-600 rounded-2xl flex items-center justify-center border-2 border-indigo-400/30 shadow-2xl cube-face-right">
+                                <div class="text-center text-white p-8">
+                                    <i class="fas fa-mobile-alt text-6xl mb-4"></i>
+                                    <h3 class="text-2xl font-bold mb-2">Responsive</h3>
+                                    <p class="text-sm opacity-80">Mobile First</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Left Face -->
+                            <div class="absolute w-64 h-64 bg-gradient-to-br from-blue-600 to-cyan-600 rounded-2xl flex items-center justify-center border-2 border-blue-400/30 shadow-2xl cube-face-left">
+                                <div class="text-center text-white p-8">
+                                    <i class="fas fa-rocket text-6xl mb-4"></i>
+                                    <h3 class="text-2xl font-bold mb-2">Performance</h3>
+                                    <p class="text-sm opacity-80">Lightning Fast</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Top Face -->
+                            <div class="absolute w-64 h-64 bg-gradient-to-br from-cyan-600 to-teal-600 rounded-2xl flex items-center justify-center border-2 border-cyan-400/30 shadow-2xl cube-face-top">
+                                <div class="text-center text-white p-8">
+                                    <i class="fas fa-shield-alt text-6xl mb-4"></i>
+                                    <h3 class="text-2xl font-bold mb-2">Secure</h3>
+                                    <p class="text-sm opacity-80">Protected</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Bottom Face -->
+                            <div class="absolute w-64 h-64 bg-gradient-to-br from-teal-600 to-green-600 rounded-2xl flex items-center justify-center border-2 border-teal-400/30 shadow-2xl cube-face-bottom">
+                                <div class="text-center text-white p-8">
+                                    <i class="fas fa-cloud text-6xl mb-4"></i>
+                                    <h3 class="text-2xl font-bold mb-2">Cloud Ready</h3>
+                                    <p class="text-sm opacity-80">Scalable</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Floating Particles Background -->
+                    <div class="absolute inset-0 pointer-events-none">
+                        <div class="particle particle-1"></div>
+                        <div class="particle particle-2"></div>
+                        <div class="particle particle-3"></div>
+                        <div class="particle particle-4"></div>
+                        <div class="particle particle-5"></div>
+                        <div class="particle particle-6"></div>
+                    </div>
+                    
+                    <!-- Glowing Orbs -->
+                    <div class="absolute top-10 left-10 w-20 h-20 bg-accent-purple/30 rounded-full blur-xl animate-pulse"></div>
+                    <div class="absolute bottom-10 right-10 w-32 h-32 bg-purple-600/20 rounded-full blur-2xl animate-pulse delay-1000"></div>
+                    <div class="absolute top-1/2 left-1/4 w-16 h-16 bg-indigo-500/25 rounded-full blur-lg animate-pulse delay-500"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ABOUT ME SECTION -->
+<section id="about" class="py-20 bg-gray-900 relative overflow-hidden">
+    <!-- Animated Background Elements -->
+    <div class="absolute inset-0">
+        <div class="absolute top-20 left-10 w-32 h-32 bg-purple-600/10 rounded-full blur-3xl animate-pulse"></div>
+        <div class="absolute bottom-20 right-10 w-40 h-40 bg-indigo-600/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
+        <div class="absolute top-1/2 left-1/3 w-24 h-24 bg-accent-purple/10 rounded-full blur-2xl animate-pulse delay-500"></div>
+    </div>
+    
+    <div class="max-w-6xl mx-auto px-6 relative z-10">
+        <div class="text-center mb-16" data-aos="fade-up" data-aos-duration="1000">
+            <h2 class="text-4xl font-inter font-bold text-white mb-4 bg-gradient-to-r from-white to-accent-purple bg-clip-text text-transparent">About Me</h2>
+            <p class="text-gray-400 text-lg animate-fade-in-up">Passionate full-stack developer turning real-world problems into practical solutions</p>
+        </div>
+        
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+            <!-- About Text -->
+            <div class="lg:col-span-2 space-y-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="bg-gray-800/50 backdrop-blur-xl rounded-2xl p-8 border border-gray-700/50">
+                    <h3 class="text-2xl font-inter font-semibold text-white mb-6 flex items-center">
+                        <div class="w-12 h-12 rounded-full mr-3 border-2 border-accent-purple overflow-hidden bg-gray-700 flex items-center justify-center profile-image-hover" style="box-shadow: 0 0 20px rgba(139, 92, 246, 0.3); transition: all 0.3s ease; cursor: pointer;">
+                            <img src="image/ab11.jpg" alt="Profile" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110">
+                        </div>
+                        Who I Am
+                    </h3>
+                    <p class="text-gray-300 leading-relaxed mb-4 about-text-enhanced">
+                        I am a 3rd-year Information Systems student with a strong interest in full‑stack web development. I enjoy turning real‑world problems into practical web applications, especially in areas like student services, online voting, and transport tracking.
+                    </p>
+                    <p class="text-gray-300 leading-relaxed about-text-enhanced">
+                        My main stack is PHP, MySQL, JavaScript, HTML and CSS. I focus on writing clean code, building responsive UIs, and working with databases to design dashboards and management systems that are simple for users to understand.
+                    </p>
+                </div>
+                
+                <!-- Education & Highlights -->
+                <div class="bg-gray-800/50 backdrop-blur-xl rounded-2xl p-8 border border-gray-700/50 hover:border-accent-purple/30 transition-all duration-300 hover:shadow-lg hover:shadow-accent-purple/20" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="text-2xl font-inter font-semibold text-white mb-6 flex items-center">
+                        <i class="fas fa-graduation-cap text-accent-purple mr-3 animate-bounce-slow"></i>
+                        Education & Highlights
+                    </h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start space-x-3 group cursor-pointer hover:bg-gray-700/30 p-3 rounded-lg transition-all duration-300">
+                            <div class="w-8 h-8 bg-accent-purple/20 rounded-lg flex items-center justify-center flex-shrink-0 mt-1 group-hover:bg-accent-purple/30 transition-colors duration-300">
+                                <i class="fas fa-university text-accent-purple text-sm group-hover:scale-110 transition-transform duration-300"></i>
+                            </div>
+                            <div class="flex-1">
+                                <h4 class="text-white font-inter font-medium mb-1 group-hover:text-accent-purple transition-colors duration-300">BSc in Information Systems</h4>
+                                <p class="text-gray-400 text-sm">3rd year student with strong academic standing</p>
+                            </div>
+                        </div>
+                        
+                        <div class="space-y-3">
+                            <div class="flex items-center space-x-2">
+                                <div class="w-2 h-2 bg-green-500 rounded-full"></div>
+                                <p class="text-gray-300 text-sm">Built 3+ advanced projects including Student Management System, Online Voting System, and Smart Campus Hub</p>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <div class="w-2 h-2 bg-green-500 rounded-full"></div>
+                                <p class="text-gray-300 text-sm">Transport Tracking System with modern UI/UX design</p>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <div class="w-2 h-2 bg-green-500 rounded-full"></div>
+                                <p class="text-gray-300 text-sm">Backend skills in PHP & MySQL: authentication, dashboards, CRUD operations, and reporting</p>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <div class="w-2 h-2 bg-green-500 rounded-full"></div>
+                                <p class="text-gray-300 text-sm">Frontend skills in responsive layouts, basic animations, and clean UI using HTML, CSS, and JavaScript</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Skills -->
+            <div class="space-y-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="bg-gray-800/50 backdrop-blur-xl rounded-2xl p-8 border border-gray-700/50 hover:border-accent-purple/30 transition-all duration-300 hover:shadow-lg hover:shadow-accent-purple/20">
+                    <h3 class="text-2xl font-inter font-semibold text-white mb-6 flex items-center">
+                        <i class="fas fa-code text-accent-purple mr-3 animate-pulse"></i>
+                        Skills
+                    </h3>
+                    
+                    <!-- Skill Categories -->
+                    <div class="space-y-6">
+                        <!-- Frontend Skills -->
+                        <div class="skill-category">
+                            <h4 class="text-accent-purple font-inter font-medium mb-3 flex items-center hover:text-accent-purple-light transition-colors duration-300">
+                                <i class="fas fa-laptop-code mr-2 animate-spin-slow"></i>
+                                Frontend
+                            </h4>
+                            <div class="space-y-3">
+                                <div class="skill-item group">
+                                    <div class="flex justify-between items-center mb-2">
+                                        <span class="text-white text-sm group-hover:text-accent-purple transition-colors duration-300">HTML</span>
+                                        <span class="text-accent-purple text-sm skill-percentage" data-percentage="90">90%</span>
+                                    </div>
+                                    <div class="w-full bg-gray-700 rounded-full h-2 overflow-hidden">
+                                        <div class="bg-gradient-to-r from-accent-purple to-accent-purple-dark h-2 rounded-full skill-bar" data-width="90%" style="width: 0%; transition: width 2s ease-in-out;"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item group">
+                                    <div class="flex justify-between items-center mb-2">
+                                        <span class="text-white text-sm group-hover:text-accent-purple transition-colors duration-300">CSS</span>
+                                        <span class="text-accent-purple text-sm skill-percentage" data-percentage="85">85%</span>
+                                    </div>
+                                    <div class="w-full bg-gray-700 rounded-full h-2 overflow-hidden">
+                                        <div class="bg-gradient-to-r from-accent-purple to-accent-purple-dark h-2 rounded-full skill-bar" data-width="85%" style="width: 0%; transition: width 2s ease-in-out;"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item group">
+                                    <div class="flex justify-between items-center mb-2">
+                                        <span class="text-white text-sm group-hover:text-accent-purple transition-colors duration-300">JavaScript</span>
+                                        <span class="text-accent-purple text-sm skill-percentage" data-percentage="75">75%</span>
+                                    </div>
+                                    <div class="w-full bg-gray-700 rounded-full h-2 overflow-hidden">
+                                        <div class="bg-gradient-to-r from-accent-purple to-accent-purple-dark h-2 rounded-full skill-bar" data-width="75%" style="width: 0%; transition: width 2s ease-in-out;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Backend Skills -->
+                        <div class="skill-category">
+                            <h4 class="text-accent-purple font-inter font-medium mb-3 flex items-center hover:text-accent-purple-light transition-colors duration-300">
+                                <i class="fas fa-server mr-2 animate-spin-slow"></i>
+                                Backend
+                            </h4>
+                            <div class="space-y-3">
+                                <div class="skill-item group">
+                                    <div class="flex justify-between items-center mb-2">
+                                        <span class="text-white text-sm group-hover:text-accent-purple transition-colors duration-300">PHP</span>
+                                        <span class="text-accent-purple text-sm skill-percentage" data-percentage="88">88%</span>
+                                    </div>
+                                    <div class="w-full bg-gray-700 rounded-full h-2 overflow-hidden">
+                                        <div class="bg-gradient-to-r from-accent-purple to-accent-purple-dark h-2 rounded-full skill-bar" data-width="88%" style="width: 0%; transition: width 2s ease-in-out;"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item group">
+                                    <div class="flex justify-between items-center mb-2">
+                                        <span class="text-white text-sm group-hover:text-accent-purple transition-colors duration-300">MySQL</span>
+                                        <span class="text-accent-purple text-sm skill-percentage" data-percentage="85">85%</span>
+                                    </div>
+                                    <div class="w-full bg-gray-700 rounded-full h-2 overflow-hidden">
+                                        <div class="bg-gradient-to-r from-accent-purple to-accent-purple-dark h-2 rounded-full skill-bar" data-width="85%" style="width: 0%; transition: width 2s ease-in-out;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Additional Skills -->
+                        <div>
+                            <h4 class="text-accent-purple font-inter font-medium mb-3 flex items-center">
+                                <i class="fas fa-tools mr-2"></i>
+                                Additional
+                            </h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-accent-purple/20 text-accent-purple text-xs rounded-full font-medium border border-accent-purple/30">Responsive Design</span>
+                                <span class="px-3 py-1 bg-accent-purple/20 text-accent-purple text-xs rounded-full font-medium border border-accent-purple/30">Clean Code</span>
+                                <span class="px-3 py-1 bg-accent-purple/20 text-accent-purple text-xs rounded-full font-medium border border-accent-purple/30">Database Design</span>
+                                <span class="px-3 py-1 bg-accent-purple/20 text-accent-purple text-xs rounded-full font-medium border border-accent-purple/30">UI/UX</span>
+                                <span class="px-3 py-1 bg-accent-purple/20 text-accent-purple text-xs rounded-full font-medium border border-accent-purple/30">CRUD Operations</span>
+                                <span class="px-3 py-1 bg-accent-purple/20 text-accent-purple text-xs rounded-full font-medium border border-accent-purple/30">Authentication</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- MY PROJECTS SECTION -->
+<div style="background: #111827; padding: 80px 20px; margin: 0 auto; max-width: 1200px;">
+    <h2 style="color: white; text-align: center; font-size: 36px; margin-bottom: 20px; font-family: Arial, sans-serif;">My Projects</h2>
+    <p style="color: #9CA3AF; text-align: center; font-size: 18px; margin-bottom: 60px;">Click any project to view details</p>
+    
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-bottom: 30px;">
+        <!-- Smart Campus Hub -->
+        <div style="background: #1F2937; border: 2px solid #8B5CF6; border-radius: 15px; padding: 30px; cursor: pointer; transition: all 0.3s ease;" onclick="openProModal('smart-campus')" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 10px 30px rgba(139, 92, 246, 0.3)'" onmouseout="this.style.transform=''; this.style.boxShadow=''">
+            <div style="color: #8B5CF6; font-size: 24px; margin-bottom: 15px; font-weight: bold;">🎓 Smart Campus Hub</div>
+            <div style="color: #D1D5DB; margin-bottom: 20px;">Campus Management System - Comprehensive platform for student services and administration</div>
+            <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                <span style="background: rgba(139, 92, 246, 0.2); color: #8B5CF6; padding: 5px 10px; border-radius: 20px; font-size: 12px;">PHP</span>
+                <span style="background: rgba(139, 92, 246, 0.2); color: #8B5CF6; padding: 5px 10px; border-radius: 20px; font-size: 12px;">MySQL</span>
+                <span style="background: rgba(139, 92, 246, 0.2); color: #8B5CF6; padding: 5px 10px; border-radius: 20px; font-size: 12px;">JavaScript</span>
+            </div>
+            <div style="margin-top: 20px;">
+                <span style="color: #8B5CF6; cursor: pointer; font-weight: bold;" onclick="openProModal('smart-campus')">View Case Study →</span>
+            </div>
+        </div>
+        
+        <!-- Student Management -->
+        <div style="background: #1F2937; border: 2px solid #8B5CF6; border-radius: 15px; padding: 30px; cursor: pointer; transition: all 0.3s ease;" onclick="openProModal('student-management')" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 10px 30px rgba(139, 92, 246, 0.3)'" onmouseout="this.style.transform=''; this.style.boxShadow=''">
+            <div style="color: #8B5CF6; font-size: 24px; margin-bottom: 15px; font-weight: bold;">📚 Student Management</div>
+            <div style="color: #D1D5DB; margin-bottom: 20px;">Academic Administration System - Streamlined student record management and services</div>
+            <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                <span style="background: rgba(139, 92, 246, 0.2); color: #8B5CF6; padding: 5px 10px; border-radius: 20px; font-size: 12px;">PHP</span>
+                <span style="background: rgba(139, 92, 246, 0.2); color: #8B5CF6; padding: 5px 10px; border-radius: 20px; font-size: 12px;">MySQL</span>
+                <span style="background: rgba(139, 92, 246, 0.2); color: #8B5CF6; padding: 5px 10px; border-radius: 20px; font-size: 12px;">AJAX</span>
+            </div>
+            <div style="margin-top: 20px;">
+                <span style="color: #8B5CF6; cursor: pointer; font-weight: bold;" onclick="openProModal('student-management')">View Case Study →</span>
+            </div>
+        </div>
+    </div>
+    
+    <!-- SHOES_HUB - Full Width -->
+    <div style="background: #1F2937; border: 2px solid #8B5CF6; border-radius: 15px; padding: 30px; cursor: pointer; transition: all 0.3s ease;" onclick="openProModal('shoes-hub')" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 10px 30px rgba(139, 92, 246, 0.3)'" onmouseout="this.style.transform=''; this.style.boxShadow=''">
+        <div style="color: #8B5CF6; font-size: 24px; margin-bottom: 15px; font-weight: bold;">👟 SHOES_HUB</div>
+        <div style="color: #D1D5DB; margin-bottom: 20px;">E-commerce Platform - Modern online shoe store with inventory management and payment processing</div>
+        <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+            <span style="background: rgba(139, 92, 246, 0.2); color: #8B5CF6; padding: 5px 10px; border-radius: 20px; font-size: 12px;">PHP</span>
+            <span style="background: rgba(139, 92, 246, 0.2); color: #8B5CF6; padding: 5px 10px; border-radius: 20px; font-size: 12px;">MySQL</span>
+            <span style="background: rgba(139, 92, 246, 0.2); color: #8B5CF6; padding: 5px 10px; border-radius: 20px; font-size: 12px;">Stripe API</span>
+        </div>
+        <div style="margin-top: 20px;">
+            <span style="color: #8B5CF6; cursor: pointer; font-weight: bold;" onclick="openProModal('shoes-hub')">View Case Study →</span>
+        </div>
+    </div>
+</div>
+
+<!-- CONTACT SECTION -->
+<section id="contact" class="py-20 bg-deep-navy">
+    <div class="max-w-4xl mx-auto px-6">
+        <div class="text-center mb-16" data-aos="fade-up">
+            <h2 class="text-4xl font-inter font-bold text-white mb-4">Get In Touch</h2>
+            <p class="text-gray-400 text-lg">Have a project in mind? Let's build something amazing together</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12" data-aos="fade-up">
+            <!-- Contact Info -->
+            <div class="space-y-6">
+                <div class="flex items-center space-x-4">
+                    <div class="w-12 h-12 bg-accent-purple/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <i class="fas fa-envelope text-accent-purple"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-white font-inter font-semibold">Email</h3>
+                        <p class="text-gray-400">abegech0762@gmail.com</p>
+                    </div>
+                </div>
+                
+                <div class="flex items-center space-x-4">
+                    <div class="w-12 h-12 bg-accent-purple/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <i class="fas fa-phone text-accent-purple"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-white font-inter font-semibold">Phone</h3>
+                        <p class="text-gray-400">09007620500</p>
+                    </div>
+                </div>
+                
+                <div class="flex items-center space-x-4">
+                    <div class="w-12 h-12 bg-accent-purple/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <i class="fas fa-map-marker-alt text-accent-purple"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-white font-inter font-semibold">Location</h3>
+                        <p class="text-gray-400">Addis Ababa, Ethiopia</p>
+                    </div>
+                </div>
+                
+                <!-- Social Links -->
+                <div class="flex space-x-4 pt-6">
+                    <a href="https://linkedin.com/in/abebe-getachew" target="_blank" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center text-gray-400 hover:text-accent-purple transition-colors tech-3d">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/abebegech" target="_blank" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center text-gray-400 hover:text-accent-purple transition-colors tech-3d">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Contact Form -->
+            <form class="space-y-4">
+                <div>
+                    <input type="text" placeholder="Your Name" class="w-full px-4 py-3 bg-gray-900 border border-gray-800 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-accent-purple transition-colors">
+                </div>
+                <div>
+                    <input type="email" placeholder="Your Email" class="w-full px-4 py-3 bg-gray-900 border border-gray-800 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-accent-purple transition-colors">
+                </div>
+                <div>
+                    <textarea placeholder="Your Message" rows="5" class="w-full px-4 py-3 bg-gray-900 border border-gray-800 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-accent-purple transition-colors resize-none"></textarea>
+                </div>
+                <button onclick="handleContactForm(event)" class="w-full btn-premium">
+                    Send Message
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- CASE STUDY MODAL -->
+<div id="caseStudyModal" class="fixed inset-0 bg-deep-navy/95 backdrop-blur-xl z-50 hidden overflow-y-auto">
+    <div class="min-h-screen px-4 py-8">
+        <div class="max-w-5xl mx-auto bg-gray-900/80 backdrop-blur-2xl rounded-3xl border border-gray-800/50 shadow-2xl">
+            <!-- Modal Header -->
+            <div class="flex justify-between items-center p-8 border-b border-gray-800/50">
+                <h2 class="text-2xl font-inter font-bold text-white">Case Study</h2>
+                <button onclick="closeCaseStudy()" class="w-12 h-12 bg-gray-800/50 backdrop-blur-sm rounded-full flex items-center justify-center text-gray-400 hover:text-white hover:bg-gray-700/50 transition-all duration-300">
+                    <i class="fas fa-times text-xl"></i>
+                </button>
+            </div>
+            
+            <!-- Case Study Content -->
+            <div id="caseStudyContent" class="p-8 space-y-8">
+                <!-- Content will be dynamically inserted here -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- SYSTEM ARCHITECTURE MODAL -->
+<div id="systemArchitectureModal" class="fixed inset-0 bg-deep-navy/95 backdrop-blur-xl z-50 hidden overflow-y-auto">
+    <div class="min-h-screen px-4 py-8">
+        <div class="max-w-5xl mx-auto bg-gray-900/80 backdrop-blur-2xl rounded-3xl border border-gray-800/50 shadow-2xl">
+            <!-- Modal Header -->
+            <div class="flex justify-between items-center p-8 border-b border-gray-800/50">
+                <h2 class="text-2xl font-inter font-bold text-white">System Architecture</h2>
+                <button onclick="closeSystemArchitecture()" class="w-12 h-12 bg-gray-800/50 backdrop-blur-sm rounded-full flex items-center justify-center text-gray-400 hover:text-white hover:bg-gray-700/50 transition-all duration-300">
+                    <i class="fas fa-times text-xl"></i>
+                </button>
+            </div>
+            
+            <!-- System Architecture Content -->
+            <div id="systemArchitectureContent" class="p-8 space-y-8">
+                <!-- Content will be dynamically inserted here -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- PRO-LEVEL GLASSMORPHISM MODAL -->
+<div id="proModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.4); backdrop-filter: blur(8px); z-index: 9999; justify-content: center; align-items: center; opacity: 0; transition: opacity 0.3s ease;">
+    <div id="proModalContent" style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 24px; max-width: 900px; width: 90%; max-height: 85vh; overflow-y: auto; padding: 0; transform: scale(0.8); transition: transform 0.3s ease; box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);">
+        <!-- Modal Header -->
+        <div style="position: relative; padding: 32px 40px 24px; border-bottom: 1px solid rgba(255, 255, 255, 0.1);">
+            <button id="proModalClose" style="position: absolute; top: 20px; right: 20px; width: 40px; height: 40px; background: rgba(139, 92, 246, 0.2); border: 1px solid rgba(139, 92, 246, 0.3); border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: all 0.3s ease; color: #8B5CF6; font-size: 18px; font-weight: bold;" onmouseover="this.style.background='#8B5CF6'; this.style.color='white'; this.style.transform='rotate(90deg)';" onmouseout="this.style.background='rgba(139, 92, 246, 0.2)'; this.style.color='#8B5CF6'; this.style.transform='rotate(0deg)';">
+                ✕
+            </button>
+            <h2 id="proModalTitle" style="color: white; font-size: 32px; margin: 0; font-weight: 700; text-shadow: 0 2px 10px rgba(139, 92, 246, 0.3);"></h2>
+            <p id="proModalSubtitle" style="color: rgba(255, 255, 255, 0.7); font-size: 18px; margin: 8px 0 0 0;"></p>
+        </div>
+        
+        <!-- Modal Body -->
+        <div id="proModalBody" style="padding: 32px 40px;">
+            <!-- Content will be dynamically inserted here -->
+        </div>
+    </div>
+</div>
+
+<!-- TOAST NOTIFICATION -->
+<div id="toast" class="fixed bottom-8 right-8 transform translate-x-full transition-transform duration-300 z-50">
+    <div class="bg-green-500 text-white px-6 py-4 rounded-lg shadow-lg flex items-center space-x-3">
+        <i class="fas fa-check-circle"></i>
+        <span id="toastMessage">Message sent successfully!</span>
+    </div>
+</div>
+
+
+<!-- MINIMALIST FOOTER -->
+<footer class="bg-deep-navy border-t border-gray-800 py-8">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+        <p class="text-gray-300 text-sm mb-2">Designed & Developed by</p>
+        <p class="text-2xl font-inter font-bold mb-4" style="color: #8B5CF6; text-shadow: 0 0 30px rgba(139, 92, 246, 0.8); animation: glowPulse 3s ease-in-out infinite;">
+            Abebe Getachew
+        </p>
+        <div class="flex justify-center space-x-4 mb-4">
+            <a href="https://github.com/abebegech" target="_blank" class="text-gray-400 hover:text-accent-purple transition-colors duration-300">
+                <i class="fab fa-github text-xl"></i>
+            </a>
+            <a href="https://linkedin.com/in/abebe-getachew" target="_blank" class="text-gray-400 hover:text-accent-purple transition-colors duration-300">
+                <i class="fab fa-linkedin text-xl"></i>
+            </a>
+            <a href="mailto:abegech0762@gmail.com" class="text-gray-400 hover:text-accent-purple transition-colors duration-300">
+                <i class="fas fa-envelope text-xl"></i>
+            </a>
+            <!-- Tech Stack -->
+            <div>
+                <h3 class="text-white font-inter font-semibold mb-4">Built With</h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs rounded-full font-inter border border-gray-700">PHP</span>
+                    <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs rounded-full font-inter border border-gray-700">MySQL</span>
+                    <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs rounded-full font-inter border border-gray-700">JavaScript</span>
+                    <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs rounded-full font-inter border border-gray-700">HTML5</span>
+                    <span class="px-3 py-1 bg-gray-800 text-gray-300 text-xs rounded-full font-inter border border-gray-700">CSS3</span>
+                    <span class="px-3 py-1 bg-accent-purple/20 text-accent-purple text-xs rounded-full font-inter border border-accent-purple/30">Tailwind CSS</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Bottom Bar -->
+        <div class="pt-8 border-t border-gray-800">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm mb-4 md:mb-0">© 2024 Abebe Getachew. All rights reserved.</p>
+                <div class="flex items-center space-x-4">
+                    <span class="text-gray-500 text-xs">Built with</span>
+                    <span class="text-accent-purple text-xs font-medium">PHP & Tailwind CSS</span>
+                    <span class="text-gray-500 text-xs">❤️</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- AOS Animation -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<!-- Clean Portfolio Script -->
+<script src="clean-script.js"></script>
+
+
+<!-- CSS ANIMATIONS -->
+<style>
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounceSlow {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes spinSlow {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes abstractAGlow {
+    0%, 100% {
+        filter: brightness(1) hue-rotate(0deg);
+        transform: scale(1.3) perspective(1000px) rotateX(15deg) rotateY(10deg);
+    }
+    25% {
+        filter: brightness(1.3) hue-rotate(90deg);
+        transform: scale(1.4) perspective(1000px) rotateX(20deg) rotateY(15deg);
+    }
+    50% {
+        filter: brightness(1.5) hue-rotate(180deg);
+        transform: scale(1.5) perspective(1000px) rotateX(10deg) rotateY(20deg);
+    }
+    75% {
+        filter: brightness(1.3) hue-rotate(270deg);
+        transform: scale(1.4) perspective(1000px) rotateX(5deg) rotateY(25deg);
+    }
+}
+
+@keyframes abstractARotate {
+    0% {
+        transform: scale(1.3) perspective(1000px) rotateX(15deg) rotateY(10deg) rotateZ(0deg);
+    }
+    100% {
+        transform: scale(1.3) perspective(1000px) rotateX(15deg) rotateY(10deg) rotateZ(360deg);
+    }
+}
+
+@keyframes abstractAPulse {
+    0%, 100% {
+        transform: scale(1.3) perspective(1000px) rotateX(15deg) rotateY(10deg);
+    }
+    50% {
+        transform: scale(1.6) perspective(1000px) rotateX(25deg) rotateY(20deg);
+    }
+}
+
+@keyframes layer1Float {
+    0%, 100% {
+        transform: translateZ(10px) rotateX(45deg) translateY(0px);
+    }
+    50% {
+        transform: translateZ(15px) rotateX(45deg) translateY(-5px);
+    }
+}
+
+@keyframes layer2Rotate {
+    0% {
+        transform: translateX(-50%) translateZ(20px) rotate(0deg);
+    }
+    100% {
+        transform: translateX(-50%) translateZ(20px) rotate(360deg);
+    }
+}
+
+@keyframes layer2Pulse {
+    0%, 100% {
+        transform: translateX(-50%) translateZ(20px) scale(1);
+        opacity: 0.8;
+    }
+    50% {
+        transform: translateX(-50%) translateZ(25px) scale(1.2);
+        opacity: 1;
+    }
+}
+
+@keyframes particleFloat0 {
+    0%, 100% {
+        transform: translate(25px, 0px) translateZ(5px) scale(1);
+        opacity: 0.8;
+    }
+    50% {
+        transform: translate(25px, -10px) translateZ(10px) scale(1.5);
+        opacity: 1;
+    }
+}
+
+@keyframes particleFloat1 {
+    0%, 100% {
+        transform: translate(0px, 25px) translateZ(8px) scale(1);
+        opacity: 0.8;
+    }
+    50% {
+        transform: translate(0px, 15px) translateZ(12px) scale(1.5);
+        opacity: 1;
+    }
+}
+
+@keyframes particleFloat2 {
+    0%, 100% {
+        transform: translate(-25px, 0px) translateZ(11px) scale(1);
+        opacity: 0.8;
+    }
+    50% {
+        transform: translate(-25px, -10px) translateZ(15px) scale(1.5);
+        opacity: 1;
+    }
+}
+
+@keyframes crownRotate {
+    0% {
+        transform: translateX(-50%) rotateY(0deg);
+    }
+    25% {
+        transform: translateX(-50%) rotateY(90deg);
+    }
+    50% {
+        transform: translateX(-50%) rotateY(180deg);
+    }
+    75% {
+        transform: translateX(-50%) rotateY(270deg);
+    }
+    100% {
+        transform: translateX(-50%) rotateY(360deg);
+    }
+}
+
+@keyframes elegantAGlow {
+    0%, 100% {
+        filter: brightness(1) hue-rotate(0deg);
+        transform: scale(1.2);
+    }
+    25% {
+        filter: brightness(1.2) hue-rotate(90deg);
+        transform: scale(1.3);
+    }
+    50% {
+        filter: brightness(1.4) hue-rotate(180deg);
+        transform: scale(1.4);
+    }
+    75% {
+        filter: brightness(1.2) hue-rotate(270deg);
+        transform: scale(1.3);
+    }
+}
+
+@keyframes ringRotate {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+        border-top-color: #8B5CF6;
+    }
+    25% {
+        border-top-color: #667EEA;
+    }
+    50% {
+        transform: translate(-50%, -50%) rotate(180deg);
+        border-top-color: #764BA2;
+    }
+    75% {
+        border-top-color: #F093FB;
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+        border-top-color: #8B5CF6;
+    }
+}
+
+@keyframes dotPulse0 {
+    0%, 100% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0.8;
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.5);
+        opacity: 1;
+    }
+}
+
+@keyframes dotPulse1 {
+    0%, 100% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0.8;
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.6);
+        opacity: 1;
+    }
+}
+
+@keyframes dotPulse2 {
+    0%, 100% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0.8;
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.7);
+        opacity: 1;
+    }
+}
+
+.animate-fade-in-up {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.animate-bounce-slow {
+    animation: bounceSlow 2s ease-in-out infinite;
+}
+
+.animate-spin-slow {
+    animation: spinSlow 3s linear infinite;
+}
+
+.profile-image-hover:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 30px rgba(139, 92, 246, 0.6) !important;
+}
+
+.about-text-enhanced {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.about-text-enhanced:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.skill-item:hover .skill-bar {
+    background: linear-gradient(135deg, #8B5CF6 0%, #A855F7 100%) !important;
+    box-shadow: 0 0 10px rgba(139, 92, 246, 0.5);
+}
+</style>
+
+<!-- JAVASCRIPT ANIMATION SCRIPT -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    console.log('JavaScript animation script starting');
+    
+    const nameElement = document.getElementById('animatedName');
+    if (nameElement) {
+        console.log('Name element found');
+        
+        // Create abstract design for letter 'A' and rest of name
+        nameElement.innerHTML = '';
+        nameElement.style.display = 'inline-block';
+        
+        // Create royal 'A' letter with crown
+        const specialA = document.createElement('span');
+        specialA.textContent = 'A';
+        specialA.style.background = 'linear-gradient(135deg, #8B5CF6 0%, #667EEA 25%, #764BA2 50%, #F093FB 75%, #8B5CF6 100%)';
+        specialA.style.backgroundSize = '200% 200%';
+        specialA.style.backgroundClip = 'text';
+        specialA.style.webkitBackgroundClip = 'text';
+        specialA.style.webkitTextFillColor = 'transparent';
+        specialA.style.textShadow = '0 0 30px rgba(139, 92, 246, 0.8), 0 0 50px rgba(102, 126, 234, 0.6), 0 0 70px rgba(240, 147, 251, 0.4)';
+        specialA.style.position = 'relative';
+        specialA.style.animation = 'elegantAGlow 8s ease-in-out infinite';
+        specialA.style.transform = 'scale(1.1)';
+        specialA.style.marginRight = '0.1em';
+        specialA.style.display = 'inline-block';
+        specialA.style.fontWeight = '900';
+        
+        // Add rotating crown on top of 'A'
+        const crown = document.createElement('div');
+        crown.style.position = 'absolute';
+        crown.style.top = '-35px';
+        crown.style.left = '50%';
+        crown.style.transform = 'translateX(-50%)';
+        crown.style.width = '50px';
+        crown.style.height = '40px';
+        crown.style.animation = 'crownRotate 6s linear infinite';
+        crown.style.transformOrigin = 'center bottom';
+        crown.style.zIndex = '10';
+        crown.style.fontFamily = 'Arial, sans-serif';
+        
+        // Create clear crown shape using CSS and Unicode symbols
+        crown.innerHTML = `
+            <div style="position: relative; width: 100%; height: 100%; display: flex; align-items: flex-end; justify-content: center;">
+                <!-- Crown base -->
+                <div style="position: absolute; bottom: 0; left: 0; width: 100%; height: 8px; background: linear-gradient(90deg, #FFD700, #FFA500, #FFD700); border-radius: 3px; box-shadow: 0 0 20px rgba(255, 215, 0, 0.9);"></div>
+                
+                <!-- Crown peaks -->
+                <div style="position: absolute; bottom: 8px; left: 5px; width: 0; height: 0; border-left: 4px solid transparent; border-right: 4px solid transparent; border-bottom: 20px solid #FFD700; filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.8));"></div>
+                <div style="position: absolute; bottom: 8px; left: 15px; width: 0; height: 0; border-left: 5px solid transparent; border-right: 5px solid transparent; border-bottom: 25px solid #FFD700; filter: drop-shadow(0 0 12px rgba(255, 215, 0, 0.8));"></div>
+                <div style="position: absolute; bottom: 8px; left: 25px; width: 0; height: 0; border-left: 6px solid transparent; border-right: 6px solid transparent; border-bottom: 30px solid #FFD700; filter: drop-shadow(0 0 15px rgba(255, 215, 0, 0.9));"></div>
+                <div style="position: absolute; bottom: 8px; right: 15px; width: 0; height: 0; border-left: 5px solid transparent; border-right: 5px solid transparent; border-bottom: 25px solid #FFD700; filter: drop-shadow(0 0 12px rgba(255, 215, 0, 0.8));"></div>
+                <div style="position: absolute; bottom: 8px; right: 5px; width: 0; height: 0; border-left: 4px solid transparent; border-right: 4px solid transparent; border-bottom: 20px solid #FFD700; filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.8));"></div>
+                
+                <!-- Crown jewels -->
+                <div style="position: absolute; top: 0; left: 23px; width: 6px; height: 6px; background: radial-gradient(circle, #FF6B6B, #FF0000); border-radius: 50%; box-shadow: 0 0 10px rgba(255, 0, 0, 0.8);"></div>
+                <div style="position: absolute; top: 5px; left: 13px; width: 4px; height: 4px; background: radial-gradient(circle, #4ECDC4, #00CED1); border-radius: 50%; box-shadow: 0 0 8px rgba(0, 206, 209, 0.8);"></div>
+                <div style="position: absolute; top: 5px; right: 13px; width: 4px; height: 4px; background: radial-gradient(circle, #4ECDC4, #00CED1); border-radius: 50%; box-shadow: 0 0 8px rgba(0, 206, 209, 0.8);"></div>
+            </div>
+        `;
+        
+        specialA.appendChild(crown);
+        
+        // Add elegant ring decoration
+        const ring = document.createElement('div');
+        ring.style.position = 'absolute';
+        ring.style.top = '50%';
+        ring.style.left = '50%';
+        ring.style.transform = 'translate(-50%, -50%)';
+        ring.style.width = '60px';
+        ring.style.height = '60px';
+        ring.style.border = '2px solid transparent';
+        ring.style.borderTopColor = '#8B5CF6';
+        ring.style.borderRadius = '50%';
+        ring.style.animation = 'ringRotate 8s linear infinite';
+        specialA.appendChild(ring);
+        
+        // Add glowing dots
+        for (let i = 0; i < 3; i++) {
+            const dot = document.createElement('div');
+            dot.style.position = 'absolute';
+            dot.style.width = '8px';
+            dot.style.height = '8px';
+            dot.style.background = '#8B5CF6';
+            dot.style.borderRadius = '50%';
+            dot.style.boxShadow = '0 0 15px rgba(139, 92, 246, 0.8)';
+            
+            const angle = (i * 120) * Math.PI / 180;
+            const radius = 40;
+            dot.style.left = `${50 + Math.cos(angle) * radius}%`;
+            dot.style.top = `${50 + Math.sin(angle) * radius}%`;
+            dot.style.transform = 'translate(-50%, -50%)';
+            dot.style.animation = `dotPulse${i} ${2 + i * 0.3}s ease-in-out infinite`;
+            
+            specialA.appendChild(dot);
+        }
+        
+        nameElement.appendChild(specialA);
+        
+        // Add rest of name normally
+        const restOfName = document.createElement('span');
+        restOfName.textContent = 'BEBE GETACHEW';
+        restOfName.style.color = '#8B5CF6';
+        restOfName.style.fontSize = 'clamp(2.5rem, 8vw, 6rem)';
+        restOfName.style.fontWeight = '800';
+        restOfName.style.textShadow = '0 0 30px rgba(139, 92, 246, 0.8)';
+        restOfName.style.verticalAlign = 'middle';
+        
+        nameElement.appendChild(restOfName);
+        
+        console.log('Name created with abstract A: ABEBE GETACHEW');
+        
+        console.log('Name set as single element: ABEBE GETACHEW');
+        
+        // Keep name in normal position with minimal animation
+        let time = 0;
+        function animateName() {
+            time += 0.02;
+            const yOffset = Math.sin(time) * 5; // Reduced up and down movement
+            const scale = 1 + Math.sin(time * 2) * 0.02; // Reduced scale effect
+            
+            nameElement.style.transform = `translateY(${yOffset}px) scale(${scale})`;
+            nameElement.style.filter = `brightness(${1 + Math.sin(time * 2) * 0.1})`;
+            
+            requestAnimationFrame(animateName);
+        }
+        animateName();
+        
+        // Create orbiting particles with JavaScript
+        const particleCount = 6;
+        const particles = [];
+        
+        for (let i = 0; i < particleCount; i++) {
+            const particle = document.createElement('div');
+            particle.style.position = 'absolute';
+            particle.style.width = '12px';
+            particle.style.height = '12px';
+            particle.style.background = '#8B5CF6';
+            particle.style.borderRadius = '50%';
+            particle.style.boxShadow = '0 0 20px #8B5CF6, 0 0 40px rgba(139, 92, 246, 0.8)';
+            particle.style.left = '50%';
+            particle.style.top = '50%';
+            particle.style.transform = 'translate(-50%, -50%)';
+            particle.style.pointerEvents = 'none';
+            
+            nameElement.parentElement.appendChild(particle);
+            particles.push({ element: particle, angle: (i * Math.PI * 2) / particleCount });
+        }
+        
+        // Animate particles in orbit
+        function animateParticles() {
+            particles.forEach((particle, index) => {
+                particle.angle += 0.02; // Rotation speed
+                const radius = 80;
+                const x = Math.cos(particle.angle) * radius;
+                const y = Math.sin(particle.angle) * radius;
+                
+                particle.element.style.transform = `translate(calc(-50% + ${x}px), calc(-50% + ${y}px))`;
+            });
+            requestAnimationFrame(animateParticles);
+        }
+        animateParticles();
+        
+        // Add hover effect
+        const nameContainer = document.querySelector('.name-container');
+        if (nameContainer) {
+            nameContainer.addEventListener('mouseenter', function() {
+                nameElement.style.transform = 'translateY(-15px) scale(1.1) rotate(0deg)';
+                nameElement.style.filter = 'brightness(1.5)';
+                nameElement.style.textShadow = '0 0 50px rgba(139, 92, 246, 1)';
+            });
+            
+            nameContainer.addEventListener('mouseleave', function() {
+                nameElement.style.transform = '';
+                nameElement.style.filter = '';
+                nameElement.style.textShadow = '0 0 30px rgba(139, 92, 246, 0.8)';
+            });
+        }
+        
+        console.log('JavaScript animations started for ABEBE GETACHEW');
+    }
+    
+    // Skill Bar Animation on Scroll
+    const observerOptions = {
+        threshold: 0.5,
+        rootMargin: '0px'
+    };
+    
+    const skillObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const skillBars = entry.target.querySelectorAll('.skill-bar');
+                skillBars.forEach((bar, index) => {
+                    const width = bar.getAttribute('data-width');
+                    setTimeout(() => {
+                        bar.style.width = width;
+                    }, index * 200); // Stagger animations
+                });
+                skillObserver.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+    
+    // Observe the skills section
+    const skillsSections = document.querySelectorAll('#about .bg-gray-800\\/50');
+    skillsSections.forEach(section => {
+        if (section.querySelector('.skill-bar')) {
+            skillObserver.observe(section);
+        }
+    });
+    
+    // Profile Image Hover Effect Enhancement
+    const profileImage = document.querySelector('.profile-image-hover');
+    if (profileImage) {
+        profileImage.addEventListener('mouseenter', function() {
+            this.style.transform = 'scale(1.1) rotate(5deg)';
+        });
+        
+        profileImage.addEventListener('mouseleave', function() {
+            this.style.transform = 'scale(1) rotate(0deg)';
+        });
+    }
+    
+    // Enhanced hover effects for skill items
+    const skillItems = document.querySelectorAll('.skill-item');
+    skillItems.forEach(item => {
+        item.addEventListener('mouseenter', function() {
+            const percentage = this.querySelector('.skill-percentage');
+            if (percentage) {
+                percentage.style.transform = 'scale(1.2)';
+                percentage.style.transition = 'transform 0.3s ease';
+            }
+        });
+        
+        item.addEventListener('mouseleave', function() {
+            const percentage = this.querySelector('.skill-percentage');
+            if (percentage) {
+                percentage.style.transform = 'scale(1)';
+            }
+        });
+    });
+    
+    // Pro-level Glassmorphism Modal Functions
+    window.openProModal = function(projectId) {
+        console.log('Opening pro modal for:', projectId);
+        const modal = document.getElementById('proModal');
+        const modalContent = document.getElementById('proModalContent');
+        const title = document.getElementById('proModalTitle');
+        const subtitle = document.getElementById('proModalSubtitle');
+        const body = document.getElementById('proModalBody');
+        
+        if (!modal || !modalContent || !title || !subtitle || !body) {
+            alert('Pro modal not found!');
+            return;
+        }
+        
+        // Pro-level case study data with images and technical challenges
+        const caseStudies = {
+            'smart-campus': {
+                title: 'Smart Campus Hub',
+                subtitle: 'Campus Transportation Management & Tracking System',
+                image: 'image/11.png',
+                problem: 'Campus transportation was unmanaged and lacked transparency. Students had no way to track bus locations, and administrators couldn\'t monitor vehicle usage or revenue efficiently.',
+                solution: 'I built a centralized tracking and reporting hub. It features a Live Bus Capacity monitor (showing 35/50 seats filled), a Revenue Tracker ($12,450+ logged), and an Automated Report Generator for PDF exports.',
+                technicalChallenges: [
+                    'Live Data Rendering: Using JavaScript to update "Bus Capacity" bars in real-time without page reloads',
+                    'Role-Based Access: Designing a system where Admins see revenue, but Students only see tracking',
+                    'Data Aggregation: Writing complex MySQL queries to generate Vehicle Usage and Permit Statistics reports'
+                ],
+                coreFeatures: [
+                    'Real-Time Bus Tracking',
+                    'Revenue Analytics', 
+                    'PDF Report Exporting'
+                ],
+                databaseLogic: {
+                    userManagement: `
+                        <strong>User Management System:</strong><br>
+                        - Role-based access control (Admin, Student, Driver)<br>
+                        - Permit tracking and issuance system<br>
+                        - Activity monitoring and reporting<br><br>
+                        
+                        <strong>Database Schema:</strong><br>
+                        - users table: id, email, password_hash, role, status<br>
+                        - permits table: id, user_id, permit_type, issued_date, expiry_date<br>
+                        - vehicles table: id, vehicle_number, capacity, driver_id<br>
+                        - trips table: id, vehicle_id, route_id, passengers, revenue
+                    `,
+                    coreQueries: `
+                        <strong>Key Database Operations:</strong><br>
+                        - Permits Issued tracking and reporting<br>
+                        - Real-time vehicle capacity updates<br>
+                        - Revenue aggregation by route and vehicle<br>
+                        - PDF report generation from database data
+                    `
+                },
+                technologies: ['PHP', 'MySQL', 'JavaScript', 'HTML5', 'CSS3', 'REST API', 'PDF Generation'],
+                demoUrl: 'http://localhost/TransportTracking/login_new.php',
+                githubUrl: 'https://github.com/abebegech/Smart-Campus-Hub'
+            },
+            'student-management': {
+                title: 'Student Management System',
+                subtitle: 'Streamlining Academic Administration and Student Services',
+                image: 'image/stud.png',
+                problem: 'Educational institutions often struggle with manual student record management, leading to lost data, inefficient processes, and poor communication between departments.',
+                solution: 'A digital student management system that automates record keeping, streamlines administrative processes, and provides real-time access to academic information.',
+                technicalChallenges: [
+                    'Migrating from paper-based to digital records',
+                    'Implementing secure grade management system',
+                    'Creating automated attendance tracking',
+                    'Building parent-teacher communication portal'
+                ],
+                databaseLogic: {
+                    userManagement: `
+                        <strong>Student Information System:</strong><br>
+                        - Student enrollment and registration<br>
+                        - Academic record management<br>
+                        - Grade and transcript processing<br><br>
+                        
+                        <strong>Database Schema:</strong><br>
+                        - students table: id, student_id, first_name, last_name, email<br>
+                        - courses table: id, course_code, course_name, credits<br>
+                        - enrollments table: student_id, course_id, semester, grade<br>
+                        - grades table: enrollment_id, assignment_type, score, max_score
+                    `,
+                    coreQueries: `
+                        <strong>Key Database Operations:</strong><br>
+                        - Course enrollment and registration<br>
+                        - Academic record management<br>
+                        - Grade and transcript processing<br>
+                        - Student information updates
+                    `
+                },
+                technologies: ['PHP', 'MySQL', 'JavaScript', 'HTML5', 'CSS3', 'REST API'],
+                demoUrl: 'http://localhost/student-system/login.php',
+                githubUrl: 'https://github.com/abebegech/student_management_system'
+            },
+            'shoes-hub': {
+                title: 'SHOES_HUB',
+                subtitle: 'Modern E-commerce Platform for Footwear Retail',
+                image: 'image/shoes.png',
+                problem: 'Local shoe businesses lack modern e-commerce solutions, missing out on online sales opportunities and struggling with inventory management.',
+                solution: 'A full-featured e-commerce platform with inventory management, payment processing, order tracking, and customer relationship management.',
+                technicalChallenges: [
+                    'Implementing secure payment gateway integration',
+                    'Building real-time inventory management',
+                    'Creating responsive product catalog',
+                    'Developing order tracking system'
+                ],
+                databaseLogic: {
+                    userManagement: `
+                        <strong>E-commerce User System:</strong><br>
+                        - Customer registration and authentication<br>
+                        - Shopping cart management<br>
+                        - Order history and tracking<br><br>
+                        
+                        <strong>Database Schema:</strong><br>
+                        - customers table: id, email, password_hash, first_name, last_name<br>
+                        - products table: id, name, description, price, stock_quantity<br>
+                        - orders table: id, customer_id, total_amount, status, created_at<br>
+                        - order_items table: order_id, product_id, quantity, price_per_item
+                    `,
+                    coreQueries: `
+                        <strong>Key Database Operations:</strong><br>
+                        - Product catalog management<br>
+                        - Shopping cart operations<br>
+                        - Order processing and fulfillment<br>
+                        - Inventory tracking and updates
+                    `
+                },
+                technologies: ['PHP', 'MySQL', 'Stripe API', 'JavaScript', 'REST API', 'Email Service'],
+                demoUrl: 'http://localhost/SHOES_HUB/',
+                githubUrl: 'https://github.com/abebegech/Shoes_Hub'
+            }
+        };
+        
+        const caseStudy = caseStudies[projectId];
+        if (caseStudy) {
+            // Set modal content
+            title.textContent = caseStudy.title;
+            subtitle.textContent = caseStudy.subtitle;
+            
+            // Build comprehensive modal body
+            body.innerHTML = `
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin-bottom: 32px;">
+                    <!-- Project Image -->
+                    <div>
+                        <div style="background: linear-gradient(135deg, #8B5CF6 0%, #7C3AED 100%); border-radius: 16px; height: 240px; display: flex; align-items: center; justify-content: center; color: white; font-size: 18px; font-weight: 600; text-align: center; padding: 20px;">
+                            🖼️ ${caseStudy.title}<br>
+                            <span style="font-size: 14px; opacity: 0.8;">Project Preview</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Problem & Solution -->
+                    <div>
+                        <div style="margin-bottom: 24px;">
+                            <h3 style="color: #8B5CF6; font-size: 20px; margin-bottom: 12px; font-weight: 600;">🎯 The Problem</h3>
+                            <p style="color: rgba(255, 255, 255, 0.8); line-height: 1.6; font-size: 15px;">${caseStudy.problem}</p>
+                        </div>
+                        <div>
+                            <h3 style="color: #8B5CF6; font-size: 20px; margin-bottom: 12px; font-weight: 600;">💡 The Solution</h3>
+                            <p style="color: rgba(255, 255, 255, 0.8); line-height: 1.6; font-size: 15px;">${caseStudy.solution}</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Core Features -->
+                ${caseStudy.coreFeatures ? `
+                <div style="margin-bottom: 32px;">
+                    <h3 style="color: #8B5CF6; font-size: 20px; margin-bottom: 16px; font-weight: 600;">🚀 Core Features</h3>
+                    <div style="display: flex; flex-wrap: wrap; gap: 12px;">
+                        ${caseStudy.coreFeatures.map(feature => `
+                            <div style="background: rgba(139, 92, 246, 0.15); border: 1px solid rgba(139, 92, 246, 0.3); border-radius: 12px; padding: 16px 20px; flex: 1 1 200px;">
+                                <p style="color: rgba(255, 255, 255, 0.9); margin: 0; font-size: 15px; font-weight: 500;">${feature}</p>
+                            </div>
+                        `).join('')}
+                    </div>
+                </div>
+                ` : ''}
+                
+                <!-- Technical Challenges -->
+                <div style="margin-bottom: 32px;">
+                    <h3 style="color: #8B5CF6; font-size: 20px; margin-bottom: 16px; font-weight: 600;">⚡ Technical Challenges</h3>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+                        ${caseStudy.technicalChallenges.map(challenge => `
+                            <div style="background: rgba(139, 92, 246, 0.1); border: 1px solid rgba(139, 92, 246, 0.2); border-radius: 12px; padding: 16px;">
+                                <p style="color: rgba(255, 255, 255, 0.9); margin: 0; font-size: 14px; line-height: 1.5;">${challenge}</p>
+                            </div>
+                        `).join('')}
+                    </div>
+                </div>
+                
+                <!-- Database Logic -->
+                <div style="margin-bottom: 32px;">
+                    <h3 style="color: #8B5CF6; font-size: 20px; margin-bottom: 16px; font-weight: 600;">🗄️ Database Logic - User Management</h3>
+                    <div style="background: rgba(0, 0, 0, 0.3); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 20px;">
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px;">
+                            <div>
+                                <h4 style="color: white; font-size: 16px; margin-bottom: 12px; font-weight: 600;">User Management System</h4>
+                                <div style="color: rgba(255, 255, 255, 0.8); font-size: 13px; line-height: 1.6;">${caseStudy.databaseLogic.userManagement}</div>
+                            </div>
+                            <div>
+                                <h4 style="color: white; font-size: 16px; margin-bottom: 12px; font-weight: 600;">Core Operations</h4>
+                                <div style="color: rgba(255, 255, 255, 0.8); font-size: 13px; line-height: 1.6;">${caseStudy.databaseLogic.coreQueries}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Technologies -->
+                <div style="margin-bottom: 32px;">
+                    <h3 style="color: #8B5CF6; font-size: 20px; margin-bottom: 16px; font-weight: 600;">🛠️ Technologies Used</h3>
+                    <div style="display: flex; flex-wrap: wrap; gap: 12px;">
+                        ${caseStudy.technologies.map(tech => `
+                            <span style="background: rgba(139, 92, 246, 0.2); color: #8B5CF6; padding: 8px 16px; border-radius: 20px; font-size: 14px; font-weight: 500; border: 1px solid rgba(139, 92, 246, 0.3);">${tech}</span>
+                        `).join('')}
+                    </div>
+                </div>
+                
+                <!-- Live Demo -->
+                ${caseStudy.demoUrl ? `
+                <div style="text-align: center; padding-top: 24px; border-top: 1px solid rgba(255, 255, 255, 0.1);">
+                    <a href="${caseStudy.demoUrl}" target="_blank" style="background: linear-gradient(135deg, #8B5CF6 0%, #7C3AED 100%); color: white; padding: 12px 32px; border-radius: 8px; text-decoration: none; font-weight: 600; display: inline-block; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(139, 92, 246, 0.3); margin: 0 8px;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 20px rgba(139, 92, 246, 0.4)'" onmouseout="this.style.transform=''; this.style.boxShadow='0 4px 15px rgba(139, 92, 246, 0.3)'">
+                        🚀 View Live Demo
+                    </a>
+                    ${caseStudy.githubUrl ? `
+                    <a href="${caseStudy.githubUrl}" target="_blank" style="background: linear-gradient(135deg, #333 0%, #000 100%); color: white; padding: 12px 32px; border-radius: 8px; text-decoration: none; font-weight: 600; display: inline-block; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); margin: 0 8px;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 20px rgba(0, 0, 0, 0.4)'" onmouseout="this.style.transform=''; this.style.boxShadow='0 4px 15px rgba(0, 0, 0, 0.3)'">
+                        📦 View on GitHub
+                    </a>
+                    ` : ''}
+                </div>
+                ` : ''}
+            `;
+            
+            // Show modal with animations
+            modal.style.display = 'flex';
+            
+            // Trigger animations
+            setTimeout(() => {
+                modal.style.opacity = '1';
+                modalContent.style.transform = 'scale(1)';
+            }, 10);
+            
+            console.log('Pro modal opened successfully');
+        } else {
+            body.innerHTML = '<p style="color: white;">Case study not found.</p>';
+            modal.style.display = 'flex';
+        }
+    };
+    
+    window.closeProModal = function() {
+        const modal = document.getElementById('proModal');
+        const modalContent = document.getElementById('proModalContent');
+        
+        if (modal && modalContent) {
+            // Reverse animations
+            modal.style.opacity = '0';
+            modalContent.style.transform = 'scale(0.8)';
+            
+            // Hide after animation
+            setTimeout(() => {
+                modal.style.display = 'none';
+            }, 300);
+            
+            console.log('Pro modal closed');
+        }
+    };
+    
+    // Close modal when clicking backdrop
+    document.getElementById('proModal').addEventListener('click', function(e) {
+        if (e.target === this) {
+            closeProModal();
+        }
+    });
+    
+    // Close modal with X button
+    document.getElementById('proModalClose').addEventListener('click', closeProModal);
+    
+    // Close modal with Escape key
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+            closeProModal();
+        }
+    });
+    
+    // Test function for modal debugging
+    window.testModal = function() {
+        console.log('Testing simple modal...');
+        openSimpleModal('smart-campus');
+    };
+    
+    // Show projects function
+    window.showProjects = function() {
+        console.log('Making projects visible...');
+        const projectsSection = document.querySelector('.bento-grid-premium');
+        if (projectsSection) {
+            projectsSection.style.display = 'block';
+            projectsSection.style.visibility = 'visible';
+            projectsSection.style.opacity = '1';
+            projectsSection.style.position = 'relative';
+            projectsSection.style.zIndex = '1';
+            console.log('Projects section made visible');
+        } else {
+            console.error('Projects section not found');
+        }
+        
+        // Also check individual project cards
+        const projectCards = document.querySelectorAll('.project-card-premium');
+        projectCards.forEach((card, index) => {
+            card.style.display = 'block';
+            card.style.visibility = 'visible';
+            card.style.opacity = '1';
+            console.log(`Project card ${index + 1} made visible`);
+        });
+    };
+    
+    // Add global click handlers for debugging
+    document.addEventListener('click', function(e) {
+        if (e.target.textContent === 'View Case Study') {
+            console.log('View Case Study clicked via global handler');
+            e.preventDefault();
+            e.stopPropagation();
+            
+            // Find the parent project card to determine which project
+            const projectCard = e.target.closest('.project-card-premium');
+            if (projectCard) {
+                const projectTitle = projectCard.querySelector('h3')?.textContent;
+                console.log('Project title:', projectTitle);
+                
+                let projectId = 'smart-campus'; // default
+                if (projectTitle?.includes('Student Management')) {
+                    projectId = 'student-management';
+                } else if (projectTitle?.includes('SHOES_HUB')) {
+                    projectId = 'shoes-hub';
+                }
+                
+                console.log('Detected project ID:', projectId);
+                openSimpleModal(projectId);
+            }
+        }
+    });
+});
+</script>
+</body>
+</html>
